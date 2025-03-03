@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Store ni Sanchez</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#Introduction">Introduction</a></li>
+            <li><a href="#hardware-items">Our item</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#prices">Price Calculator</a></li>
+        </ul>
+    </nav>
+
+ 
+    <section id="Introduction">
+        <h2>Welcome to Online Hardware Store ni Sanchez</h2>
+        <p>At our store, we offer a wide variety of construction materials, tools, and more! Browse our items below and proceed to checkout to make a purchase.</p>
+    </section>
+
+   
+    <section id="hardware-items">
+
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe1RA72OdT-fy0211c5xGoyT5wv8urrkFwog&s" alt="Hollow Blocks">
+            <h4>Hollow Blocks</h4>
+            <p>₱15.00 per piece</p>
+            <input type="number" class="quantity" data-name="Hollow Blocks" data-price="15.00" min="1" value="1">
+            <button class="add-to-cart" data-name="Hollow Blocks" data-price="15.00">Click to Add</button>
+        </div>
+
+        <div class="product">
+            <img src="https://down-ph.img.susercontent.com/file/a0f9c481d473794cc7fc65b4b88a9598" alt="Buhangin">
+            <h3>Buhangin</h3>
+            <p>₱500.00 per cubic</p>
+            <input type="number" class="quantity" data-name="Buhangin" data-price="500.00" min="1" value="1">
+            <button class="add-to-cart" data-name="Buhangin" data-price="500.00">Click to Add</button>
+        </div>
+
+        <div class="product">
+            <img src="https://down-ph.img.susercontent.com/file/d9ea7819eebf91851d0817d00cd8d940_tn.webp" alt="Graba">
+            <h3>Graba</h3>
+            <p>₱600.00 per cubic</p>
+            <input type="number" class="quantity" data-name="Graba" data-price="600.00" min="1" value="1">
+            <button class="add-to-cart" data-name="Graba" data-price="600.00">Click to Add</button>
+        </div>
+
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD8s0olv2KbyVa0fbHbw2Z0pfIOV85mUMuiQ&s" alt="Yero">
+            <h3>Yero</h3>
+            <p>₱320.00 per piece</p>
+            <input type="number" class="quantity" data-name="Yero" data-price="320.00" min="1" value="1">
+            <button class="add-to-cart" data-name="Yero" data-price="320.00">Click to Add</button>
+        </div>
+
+        <div class="product">
+            <img src="https://rmn.ph/wp-content/uploads/2020/03/kahoy-photo-by-nelvie.jpg" alt="Kahoy">
+            <h3>Kahoy</h3>
+            <p>₱80.00 per piece</p>
+            <input type="number" class="quantity" data-name="Kahoy" data-price="80.00" min="1" value="1">
+            <button class="add-to-cart" data-name="Kahoy" data-price="80.00">Click to Add</button>
+        </div>
+
+        <div class="product">
+            <img src="https://down-ph.img.susercontent.com/file/ph-11134207-7qul3-lhpv2k3i9urt13" alt="Pako">
+            <h3>Pako</h3>
+            <p>₱50.00 per kilo</p>
+            <input type="number" class="quantity" data-name="Pako" data-price="50.00" min="1" value="1">
+            <button class="add-to-cart" data-name="Pako" data-price="50.00">Click to Add</button>
+        </div>
+
+        <div class="product">
+            <img src="https://rmn.ph/wp-content/uploads/2019/06/bakal.jpg" alt="Bakal">
+            <h3>Bakal</h3>
+            <p>₱150.00 per piece</p>
+            <input type="number" class="quantity" data-name="Bakal" data-price="150.00" min="1" value="1">
+            <button class="add-to-cart" data-name="Bakal" data-price="150.00">Click to Add</button>
+        </div>
+    </section>
+
+   
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to contact us.</p>
+        <p>Email: contact@hardwarestore.com</p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+
+    <section id="prices">
+        <h2>Price Calculator</h2>
+        <p>Use our price calculator to calculate the total cost based on the products and quantities selected.</p>
+        <button id="calculate-price">Calculate Total</button>
+        <p id="calculated-total">Total: ₱0.00</p>
+    </section>
+
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-list"></ul>
+        <p>Total: ₱<span id="total-price">0.00</span></p>
+        <button id="checkout" disabled>Proceed to Checkout</button>
+    </section>
+
+
+    <section id="checkout-page" style="display:none;">
+        <h2>Checkout</h2>
+        <h3>Order Summary</h3>
+        <ul id="checkout-list"></ul>
+        <p>Total: ₱<span id="final-total-price">0.00</span></p>
+        <button id="complete-purchase">Complete Purchase</button>
+    </section>
+
+    <section id="thank-you" style="display:none;">
+        <h2>Thank You for Your Purchase!</h2>
+        <p>Your order has been placed successfully.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
